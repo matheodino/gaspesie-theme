@@ -1,0 +1,25 @@
+{
+	"name": "gaspesie/gaspesie",
+	"type": "package",
+	"description": "WordPress 6.0 theme built in Matane for program synthesis examination.",
+	"keywords": [
+		"WordPress",
+		"Themes"
+	],
+	"homepage": "https://matheonlht.com/",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"szepeviktor/phpstan-wordpress": "^1.0.2",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"wp-coding-standards/wpcs": "*",
+		"wptrt/wpthemereview": "^0.2.1"
+	},
+	"scripts": {
+		"analyze": "@php ./vendor/bin/phpstan analyze",
+		"standards:check": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+		"standards:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+	}
+}
