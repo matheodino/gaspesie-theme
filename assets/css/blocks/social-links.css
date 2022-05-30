@@ -1,0 +1,19 @@
+.wp-block-social-links .wp-block-social-link a {
+    position: relative;
+    display: inline-flex;
+    padding: 1.25rem !important;
+    border-radius: 100%;
+    outline: 1px solid var(--wp--preset--color--secondary);;
+    background-color: white;
+}
+
+.wp-block-social-links .wp-block-social-link a:hover {
+    background-color: var(--wp--preset--color--secondary);;
+    outline: none;
+}
+
+.wp-block-social-links .wp-block-social-link svg {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    object-fit: contain;
+}

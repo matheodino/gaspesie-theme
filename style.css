@@ -1,6 +1,6 @@
 /*
 Theme Name: Gaspesie
-Author: Mathéo Noalhyt
+Author: matheodino
 Author URI: https://matheonlht.com/
 Theme URI: https://matheonlht.com/
 Tags: full-site-editing, editor-style, block-styles, block-patterns
@@ -53,4 +53,13 @@ body {
 		padding-left: var(--wp--custom--h-spacing);
 		padding-right: var(--wp--custom--h-spacing);
 	}
+}
+
+a {
+	text-decoration: none;
+}
+
+p a,
+span a {
+	text-decoration: underline;
 }

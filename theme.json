@@ -32,7 +32,7 @@
 					"slug": "primary"
 				},
 				{
-					"color": "#ffffff",
+					"color": "lightgray",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
