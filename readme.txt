@@ -3,7 +3,7 @@ Contributors: Mathéo Noalhyt
 Tested up to: 6.0
 Requires at least: 6.0
 Requires PHP: 7.2
-Version: 1.0.0
+Version: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: Mathéo Noalhyt
@@ -68,7 +68,7 @@ use the command: npm run lint:js
 
 == Changelog ==
 For changelogs please see the Github repository.
-1.0.0 Initial release
+0.1 Initial release
 
 == Licence ==
 Gaspesie is distributed under the terms of the GNU GPL.

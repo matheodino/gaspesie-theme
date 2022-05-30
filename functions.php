@@ -5,13 +5,13 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package gaspesie
- * @since 1.0.0
+ * @since 0.1
  */
 
 /**
  * The theme version.
  *
- * @since 1.0.0
+ * @since 0.1
  */
 define( 'GASPESIE_VERSION', wp_get_theme()->get( 'Version' ) );
 
@@ -42,7 +42,7 @@ add_action( 'after_setup_theme', 'gaspesie_setup' );
 /**
  * Enqueue the CSS files.
  *
- * @since 1.0.0
+ * @since 0.1
  *
  * @return void
  */
@@ -56,6 +56,12 @@ function gaspesie_styles() {
 	wp_enqueue_style(
 		'gaspesie-shared-styles',
 		get_theme_file_uri( 'assets/css/style-shared.min.css' ),
+		[],
+		GASPESIE_VERSION
+	);
+	wp_enqueue_style(
+		'gaspesie-block-styles',
+		get_theme_file_uri( 'assets/css/block-styles.css' ),
 		[],
 		GASPESIE_VERSION
 	);
