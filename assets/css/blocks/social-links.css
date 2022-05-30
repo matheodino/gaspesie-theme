@@ -1,3 +1,7 @@
+.wp-block-social-links .wp-block-social-link {
+    transform: none;
+}
+
 .wp-block-social-links .wp-block-social-link a {
     position: relative;
     display: inline-flex;
@@ -12,8 +16,9 @@
     outline: none;
 }
 
-.wp-block-social-links .wp-block-social-link svg {
+.wp-block-social-links svg {
     width: 3.5rem !important;
     height: 3.5rem !important;
     object-fit: contain;
+    fill: var(--wp--preset--color--foreground) !important;
 }

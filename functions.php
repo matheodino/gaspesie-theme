@@ -23,14 +23,20 @@ function gaspesie_setup()
 {
 	add_theme_support('wp-block-styles');
 	add_editor_style('./assets/css/style-shared.css');
-	add_editor_style('./assets/css/block-styles.css');
-	add_editor_style('style-editor.css');
 
 	/*
 	 * Load additional block styles.
 	 * See details on how to add more styles in the readme.txt.
 	 */
-	$styled_blocks = ['button', 'file', 'quote', 'search', 'social-links'];
+	$styled_blocks = [
+		'button',
+		'file',
+		'quote',
+		'search',
+		'social-links',
+		'post-excerpt',
+		'post-featured-image',
+	];
 	foreach ($styled_blocks as $block_name) {
 		$args = array(
 			'handle' => "gaspesie-$block_name",
