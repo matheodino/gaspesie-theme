@@ -15,36 +15,6 @@
 		"color": {
 			"defaultGradients": false,
 			"defaultPalette": false,
-			"duotone": [
-				{
-					"colors": [
-						"#c7c7c7",
-						"#000000"
-					],
-					"name": "Secondary and primary",
-					"slug": "secondary-primary"
-				},
-				{
-					"colors": [
-						"#000000",
-						"#ffffff"
-					],
-					"name": "Primary and foreground",
-					"slug": "primary-foreground"
-				}
-			],
-			"gradients": [
-				{
-					"gradient": "linear-gradient(#000000 49.9%,#fff 50%)",
-					"name": "Primary color to white",
-					"slug": "primary-white"
-				},
-				{
-					"gradient": "linear-gradient(#fff 49.9%,#000000 50%)",
-					"name": "Horizontal white to Primary color",
-					"slug": "white-primary"
-				}
-			],
 			"palette": [
 				{
 					"color": "#ffffff",
@@ -62,7 +32,7 @@
 					"slug": "primary"
 				},
 				{
-					"color": "#c7c7c7",
+					"color": "#ffffff",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
@@ -83,8 +53,7 @@
 			"small-button-shadow": "0 1px 1px 0 rgba(0, 0, 0, 0.2)"
 		},
 		"layout": {
-			"contentSize": "1024px",
-			"wideSize": "1024px"
+			"contentSize": "1152px"
 		},
 		"spacing": {
 			"units": [
@@ -113,7 +82,7 @@
 				},
 				{
 					"name": "Medium",
-					"size": "1.25rem",
+					"size": "1.5rem",
 					"slug": "medium"
 				},
 				{
@@ -144,8 +113,8 @@
 					"width": "2px"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--secondary)",
-					"text": "var(--wp--preset--color--foreground)"
+					"background": "var(--wp--preset--color--foreground)",
+					"text": "var(--wp--preset--color--background)"
 				},
 				"spacing": {
 					"padding": {
@@ -178,6 +147,11 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--extra-small)"
 				}
+			},
+			"core/image": {
+				"border" : {
+					"radius": ".25rem"
+				}
 			}
 		},
 		"color": {
@@ -202,7 +176,7 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--system)",
-			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontSize": "1.25rem",
 			"lineHeight": "1.5"
 		}
 	},
