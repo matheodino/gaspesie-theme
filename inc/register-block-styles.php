@@ -32,13 +32,5 @@ function gaspesie_register_block_styles()
 			'label' => __('Button with shadow', 'gaspesie'),
 		)
 	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/button',
-		array(
-			'name'  => 'gaspesie-shadow-button',
-			'label' => __('Button with shadow', 'gaspesie'),
-		)
-	);
 }
 add_action('init', 'gaspesie_register_block_styles');
