@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.0/theme.json",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"customTemplates": [
 		{
 			"name": "no-title",
@@ -61,14 +61,14 @@
 			]
 		},
 		"typography": {
+			"dropCap": false,
 			"fontFamilies": [
 				{
 					"fontFamily": "\"Space Grotesk\",sans-serif",
-					"slug": "system",
-					"name": "System"
+					"name": "System",
+					"slug": "system"
 				}
 			],
-			"dropCap": false,
 			"fontSizes": [
 				{
 					"name": "Extra small",
@@ -133,6 +133,11 @@
 					"text": "var(--wp--preset--color--foreground)"
 				}
 			},
+			"core/image": {
+				"border": {
+					"radius": ".25rem"
+				}
+			},
 			"core/post-author": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--extra-small)"
@@ -146,11 +151,6 @@
 			"core/post-terms": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--extra-small)"
-				}
-			},
-			"core/image": {
-				"border" : {
-					"radius": ".25rem"
 				}
 			}
 		},
@@ -166,13 +166,13 @@
 			}
 		},
 		"spacing": {
+			"blockGap": ".5rem",
 			"margin": {
 				"bottom": "0px",
 				"left": "0px",
 				"right": "0px",
 				"top": "0px"
-			},
-			"blockGap": ".5rem"
+			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--system)",
