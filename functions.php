@@ -112,3 +112,9 @@ function disable_emojis_tinymce($plugins)
 		return array();
 	}
 }
+
+// Register custom Post Types
+require_once get_theme_file_path('inc/custom-post-types.php');
+
+// Register custom Taxonomies
+require_once get_theme_file_path('inc/custom-taxonomies.php');

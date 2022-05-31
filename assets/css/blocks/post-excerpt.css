@@ -1,4 +1,4 @@
-.wp-block-post-excerpt p {
+.wp-block-post-excerpt p:not(.wp-block-post-excerpt__more-text) {
     margin-top: -1rem;
     margin-bottom: 0;
 }
