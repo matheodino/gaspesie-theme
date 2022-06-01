@@ -2,11 +2,11 @@
     overflow-x: hidden;
 }
 
-header.wp-block-template-part {
+header {
     position: relative;
 }
 
-    header.wp-block-template-part::before {
+    header::before {
         content: '';
         display: block;
         position: absolute;
@@ -18,7 +18,7 @@ header.wp-block-template-part {
         background-color: var(--wp--preset--color--foreground);
     }
 
-    header.wp-block-template-part::after {
+    header::after {
         content: '' !important;
         display: block;
         position: absolute !important;
@@ -33,11 +33,11 @@ header.wp-block-template-part {
     }
 
         @media (min-width: 1024px) {
-            header.wp-block-template-part::after {
+            header::after {
                 width: 200%;
             }
         }
 
-    header.wp-block-template-part * {
+    header * {
         color: var(--wp--preset--color--background);
     }
