@@ -52,3 +52,17 @@ function disable_emojis_tinymce($plugins)
 		return array();
 	}
 }
+
+
+/**
+ * Import Google Fonts by head tag.
+ */
+function google_fonts_import()
+{
+?>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<?php
+}
+add_action('wp_head', 'google_fonts_import');
