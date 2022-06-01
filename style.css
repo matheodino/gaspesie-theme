@@ -44,22 +44,15 @@ body {
  * running up to the edge of the browser window,
  * making the text difficult to read.
 */
-@media (max-width: 1024px) {
+@media (max-width: 1152px) {
 
 	main> :not(.alignfull),
 	main .wp-block-query> :not(.alignfull),
 	main .entry-content> :not(.alignfull),
-	main .entry-content .wp-block-columns.alignfull p {
+	main .entry-content .wp-block-columns.alignfull p,
+	footer.wp-block-template-part,
+	.responsive {
 		padding-left: var(--wp--custom--h-spacing);
 		padding-right: var(--wp--custom--h-spacing);
 	}
-}
-
-a {
-	text-decoration: none;
-}
-
-p a,
-a[rel="tag"] {
-	text-decoration: underline;
 }

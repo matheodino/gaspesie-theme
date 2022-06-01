@@ -5,3 +5,8 @@
 .wp-block-column .wp-block-post-excerpt p:not(.wp-block-post-excerpt__more-text) {
     margin-top: -1rem;
 }
+
+/* Option 'Add "read more" link text' hidden */
+.wp-block-post-excerpt__more-text {
+    display: none;
+}

@@ -98,3 +98,12 @@ input[type=submit]:visited {
 .is-style-gaspesie-shadow-button .wp-block-button__link:active {
     box-shadow: var(--wp--custom--button-highlight)
 }
+
+a {
+	text-decoration: none;
+}
+
+p a,
+a[rel="tag"] {
+	text-decoration: underline;
+}

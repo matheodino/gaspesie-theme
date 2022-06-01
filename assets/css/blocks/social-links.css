@@ -1,24 +1,27 @@
-    /* The following is inherited from the PHP loop, so it doesn't scale with the number of links. */
-    .wp-block-social-links .wp-block-social-link:first-child {
-        z-index: 3;
-        margin-left: calc(2rem*2);
-    }
+/* The following is inherited from the PHP loop, so it doesn't scale with the number of links. */
+.wp-block-social-links {
+    transform: translateX(calc(2rem));
+}
 
-    .wp-block-social-links .wp-block-social-link:nth-child(2) {
-        z-index: 2;
-        transform: translateX(calc(-2rem*1));
-    }
+.wp-block-social-links .wp-block-social-link:first-child {
+    z-index: 3;
+}
 
-    .wp-block-social-links .wp-block-social-link:nth-child(3) {
-        z-index: 1;
-        transform: translateX(calc(-2rem*2));
-    }
+.wp-block-social-links .wp-block-social-link:nth-child(2) {
+    z-index: 2;
+    transform: translateX(calc(-2rem*1));
+}
+
+.wp-block-social-links .wp-block-social-link:nth-child(3) {
+    z-index: 1;
+    transform: translateX(calc(-2rem*2));
+}
 
 .wp-block-social-links .wp-block-social-link {
     transform: none;
 }
 
-.wp-block-social-links .wp-block-social-link > * {
+.wp-block-social-links .wp-block-social-link>* {
     position: relative;
     display: inline-flex;
     padding: 1.25rem !important;
@@ -27,12 +30,12 @@
     background-color: white;
 }
 
-.wp-block-social-links .wp-block-social-link > *:hover {
+.wp-block-social-links .wp-block-social-link>*:hover {
     background-color: var(--wp--preset--color--secondary);
     outline: none;
 }
 
-.wp-block-social-links svg {
+.wp-block-social-links .wp-block-social-link svg {
     width: 3.5rem !important;
     height: 3.5rem !important;
     object-fit: contain;
