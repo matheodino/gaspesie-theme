@@ -104,7 +104,9 @@ a {
 }
 
 p a,
-a[rel="tag"] {
+a[rel="tag"],
+.wp-block-post-navigation-link a,
+.wp-block-categories-list a {
     text-decoration: underline;
 }
 
@@ -114,12 +116,35 @@ a[rel="tag"] {
     line-height: 1;
 }
 
-.background {
+p.background {
     position: absolute;
     z-index: -1;
-    left: 2rem;
+    left: 6rem;
     opacity: .05;
-    transform: translateY(-10rem);
-    font-size: 8rem;
+    transform: translateY(-8rem);
+    font-size: 5rem;
     font-weight: bold;
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+	p.background {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1536px) {
+	p.background {
+        font-size: 8rem;
+    }
+}
+
+.video {
+    max-width: 512px;
+}
+
+.wp-block-video {
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: .25rem;
 }

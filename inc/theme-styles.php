@@ -21,6 +21,7 @@ function gaspesie_setup()
 		'html',
 		'query',
 		'categories',
+		'image',
 	];
 	foreach ($styled_blocks as $block_name) {
 		$args = array(

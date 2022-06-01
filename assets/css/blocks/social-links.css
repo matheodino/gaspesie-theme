@@ -4,17 +4,22 @@
 }
 
 .wp-block-social-links .wp-block-social-link:first-child {
-    z-index: 3;
+    z-index: 4;
 }
 
 .wp-block-social-links .wp-block-social-link:nth-child(2) {
-    z-index: 2;
+    z-index: 3;
     transform: translateX(calc(-2rem*1));
 }
 
 .wp-block-social-links .wp-block-social-link:nth-child(3) {
-    z-index: 1;
+    z-index: 2;
     transform: translateX(calc(-2rem*2));
+}
+
+.wp-block-social-links .wp-block-social-link:nth-child(4) {
+    z-index: 1;
+    transform: translateX(calc(-2rem*3));
 }
 
 .wp-block-social-links .wp-block-social-link {
@@ -24,8 +29,8 @@
 .wp-block-social-links .wp-block-social-link>* {
     position: relative;
     display: inline-flex;
-    padding: 1.25rem !important;
-    border-radius: 100%;
+    padding: 1.5rem !important;
+    border-radius: 100% !important;
     outline: 1px solid var(--wp--preset--color--secondary);
     background-color: white;
 }
@@ -36,8 +41,19 @@
 }
 
 .wp-block-social-links .wp-block-social-link svg {
-    width: 3.5rem !important;
-    height: 3.5rem !important;
     object-fit: contain;
-    fill: var(--wp--preset--color--foreground) !important;
+}
+
+a[href="https://matheonlht.local/wp-content/uploads/2022/06/cv.pdf"] svg {
+    display: none;
+}
+
+a[href="https://matheonlht.local/wp-content/uploads/2022/06/cv.pdf"]::after {
+    content: "CV";
+    transform: translateX(-1.5rem) translateY(.5rem);
+    font-weight: bold;
+    padding: 1.5rem;
+    height: 1.25em;
+    max-width: 1.25em;
+    box-sizing: border-box;
 }
